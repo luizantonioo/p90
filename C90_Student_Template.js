@@ -2,7 +2,7 @@ canvas = document.getElementById('myCanvas');
 /*
 Corrija o nome da função e uso o context 2d
 */
-ctx = canvas.getcontext("2d");
+ctx = canvas.getContext("2d");
 
 car1Width = 120;
 car1Height = 70;
