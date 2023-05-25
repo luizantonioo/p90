@@ -104,4 +104,131 @@ function my_keydown(e)
 			car2_right();
 			console.log("tecla D");
 		}
+		if(car1X > 700)
+        {
+console.log("car1");
+document.getElementById('gameStatus').innerHTML = "Carro 1 Venceu!!";
+}
+}
+function car1_left()
+{
+if(car1X >= 0)
+{
+car1X = carX - 10;
+console.log("quando a seta para a esquerda é pressionada,  x = " + car1X +" / y = " +car1Y);
+uploadBackground();
+uploadcar1();
+uploadcar2();
+}
+}
+
+function car1_right()
+{
+if(car1X <= 700)
+{
+car1X = carX + 10;
+console.log("quando a seta para a direita é pressionada,  x = " + car1X +" / y = " +car1Y);
+uploadBackground();
+uploadcar1();
+uploadcar2();
+}
+}
+
+function car1_down()
+{
+if(car1X <= 500)
+{
+car1Y = carY + 10;
+console.log("quando a seta para baixo é pressionada,  x = " + car1X +" / y = " +car1Y);
+uploadBackground();
+uploadcar1();
+uploadcar2();
+}
+}
+
+function car1_up()
+{
+if(car1X >= 0)
+{
+car1Y = carY - 10;
+console.log("quando a seta para cima é pressionada,  x = " + car1X +" / y = " +car1Y);
+uploadBackground();
+uploadcar1();
+uploadcar2();
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function car2_left()
+{
+if(car2X >= 0)
+{
+car2X = car2X - 10;
+console.log("quando a seta para a esquerda é pressionada,  x = " + car2X +" / y = " +car2Y);
+uploadBackground();
+uploadcar1();
+uploadcar2();
+}
+}
+
+function car2_right()
+{
+if(car2X <= 700)
+{
+car2X = car2X + 10;
+console.log("quando a seta para a direita é pressionada,  x = " + car2X +" / y = " +car2Y);
+uploadBackground();
+uploadcar1();
+uploadcar2();
+}
+}
+
+function car2_down()
+{
+if(car2X <= 500)
+{
+car2Y = car2Y + 10;
+console.log("quando a seta para baixo é pressionada,  x = " + car2X +" / y = " +car2Y);
+uploadBackground();
+uploadcar1();
+uploadcar2();
+}
+}
+
+function car2_up()
+{
+if(car2X >= 0)
+{
+car2Y = car2Y - 10;
+console.log("quando a seta para cima é pressionada,  x = " + car2 +" / y = " +car2Y);
+uploadBackground();
+uploadcar1();
+uploadcar2();
+}
 }
